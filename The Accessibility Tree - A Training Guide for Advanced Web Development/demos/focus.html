@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Focus Trigger </title>
+
+<style type="text/css"><!--
+--></style>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$('h2').focus(function(){
+alert('Surprise!');
+});
+});
+</script>
+</head>
+<body>
+<div>
+
+<h1 tabindex="-1">
+Focus Trigger
+</h1>
+
+<p>
+<h2 tabindex="-1">
+Read this text using JAWS and NVDA.
+</h2>
+</p>
+
+<p>
+<pre>
+Notice that using the Up and Down arrow keys to read the textual content on the page will automatically trigger the 'focus' handler using NVDA,
+whereas doing the same using JAWS, will not.
+</pre>
+</p>
+
+</div>
+</body>
+</html>

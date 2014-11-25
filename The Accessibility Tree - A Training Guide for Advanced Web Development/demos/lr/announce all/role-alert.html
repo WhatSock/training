@@ -1,0 +1,18 @@
+<html><head>
+</head><body>
+
+<div>
+<script type="text/javascript">
+var intVal = 0,
+intFN = function(){
+setInterval(function(){
+document.getElementById('tst1').innerHTML = (intVal++);
+}, 1000);
+};
+</script>
+<button onclick="intFN()"> Test </button>
+</div>
+
+<div role="alert" id="tst1"></div>
+
+</body></html>
