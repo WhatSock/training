@@ -1590,6 +1590,9 @@ Relevant Live Region attributes: aria-live="assertive" and aria-atomic="true"
 When set, the Alert Role ties into the alert system on the Operating System, causing system wide alerts to fire and interrupt speech, no matter where focus is set, even while interacting with unrelated applications.
 </p>
 <p>
+It's important to note that, when aria-live="assertive" is applied to a container without the use of role="alert", it will not tie into the alert system of the Operating System. This only occurs when role="alert" is included.
+</p>
+<p>
 Example:
 </p>
 <p>
