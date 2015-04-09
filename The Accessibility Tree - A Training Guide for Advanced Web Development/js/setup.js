@@ -31,6 +31,20 @@
 						backText: 'Back to Footnote'
 						});
 
+		// Generate permalinks
+		$A.query('h2, h3, h4, h5, h6', function(i, o){
+			var d = o.parentNode, a = $A.createEl('a',
+							{
+							href: 'http://whatsock.com/training/#' + d.id,
+							title: 'Permalink: http://whatsock.com/training/#' + d.id,
+							'aria-label': 'Permalink: http://whatsock.com/training/#' + d.id
+							}, null, 'permalink');
+
+			a.innerHTML = '<span aria-hidden="true">#</span>';
+			d.appendChild(a);
+			$A.css(a, 'left', -(a.offsetWidth));
+		});
+
 		if (window.navigator.onLine)
 			// Check for updates
 			$A.getScript('http://api.whatsock.com/accdc-updates.js');
