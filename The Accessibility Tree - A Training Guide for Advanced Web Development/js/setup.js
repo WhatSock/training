@@ -144,7 +144,8 @@
 			props.li.appendChild(a);
 
 			if (level > 1 && !props.pSibling)
-				$A.setAttr(props.ul, 'aria-label', props.map[level - 1].headingText);
+				$A.setAttr(props.ul, 'aria-label', props.map[level - 1].headingText.substring(props.level
+					> 2 ? props.map[level - 1].headingText.indexOf(': ') + 2 : 1));
 			$A.internal.data(a, 'props', props);
 			links.push(a);
 			pLevel = level;
