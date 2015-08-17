@@ -23,6 +23,8 @@ http://whatsock.com/training
 Related projects:
 -----
 
+The ARIA Role Conformance Matrices: https://github.com/accdc/aria-matrices
+
 AccDC API
 Standalone: https://github.com/accdc/accdc
 For jQuery: https://github.com/accdc/accdc-jquery
