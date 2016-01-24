@@ -77,8 +77,8 @@
 					ev.preventDefault();
 				});
 
-				if (i < (hs.length - 1))
-					ph.appendChild($A.createEl('span', null, null, null, document.createTextNode(' | ')));
+				//if (i < (hs.length - 1))
+					//ph.appendChild($A.createEl('span', null, null, null, document.createTextNode(' | ')));
 			}
 		}
 	}, generateTOC = function(){
@@ -139,16 +139,16 @@
 			}
 
 			for (var x = 1; x <= 6; x++)
-							props.map[x] = map[x];
-			a.innerHTML = props.headingText;
-			props.li.appendChild(a);
-
-			if (level > 1 && !props.pSibling)
-				$A.setAttr(props.ul, 'aria-label', props.map[level - 1].headingText.substring(props.level
-					> 2 ? props.map[level - 1].headingText.indexOf(': ') + 2 : 1));
-			$A.internal.data(a, 'props', props);
-			links.push(a);
-			pLevel = level;
+				props.map[x] = map[x];
+				a.innerHTML = props.headingText;
+				props.li.appendChild(a);
+	
+				if (level > 1 && !props.pSibling)
+					$A.setAttr(props.ul, 'aria-label', props.map[level - 1].headingText.substring(props.level
+						> 2 ? props.map[level - 1].headingText.indexOf(': ') + 2 : 1));
+				$A.internal.data(a, 'props', props);
+				links.push(a);
+				pLevel = level;
 		});
 
 		var list = $A.createEl('ul',

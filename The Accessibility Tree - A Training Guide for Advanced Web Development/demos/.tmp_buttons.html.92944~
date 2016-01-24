@@ -1,0 +1,125 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Simulated Buttons </title>
+
+<style type="text/css"><!--
+.button {
+display: inline-block;
+text-decoration: none;
+font: bold 20px/20px HelveticaNeue, Arial;
+padding: 8px 11px;
+border: 1px solid #dedede;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+background: #a5b8c6;
+filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#becbd6', endColorstr='#88a1b4'); /*  IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#becbd6), to(#88a1b4)); /*  WebKit */
+background: -moz-linear-gradient(top,  #becbd6, #88a1b4);
+border-color: #000;
+color: #000;
+text-shadow: 0 1px 0 #c4d0d9;
+-webkit-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0;
+-moz-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0;
+box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0;        
+margin-left: 250px;
+}
+*:focus {
+outline: red 2px inset;
+}
+--></style>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+$('span.button.one').click(function(ev){
+alert('Not accessible from the keyboard, and with no active element role for screen reader users');
+});
+
+$('span.button.two').click(function(ev){
+alert('Focusable, but not accessible from the keyboard, and with no active element role for screen reader users');
+});
+
+$('span.button.three').bind('click keydown', function(ev){
+var k = ev.which || ev.keyCode;
+if (!k || k === 1 || k == 13 || k == 32){
+alert('Both focusable and accessible from the keyboard, but with no active element role for screen reader users');
+}
+});
+
+$('span.button.four').bind('click keydown', function(ev){
+var k = ev.which || ev.keyCode;
+if (!k || k === 1 || k == 13 || k == 32){
+alert('Both focusable and accessible from the keyboard, as well as with an active element role for screen reader users!');
+}
+});
+
+});
+</script>
+</head>
+<body>
+<div>
+
+<h1>
+Simulated Buttons
+</h1>
+
+<p>
+<pre>
+Checklist:
+*Keyboard Accessibility: Attempt to set focus to the button using Tab and Shift+Tab.
+*Keyboard Accessibility: Attempt to activate the button from the keyboard without a screen reader running.
+*Screen Reader Accessibility: Attempt to activate the button from the keyboard with a screen reader running.
+*Screen Reader Accessibility: Attempt to identify the element role of "button" using a screen reader.
+</pre>
+</p>
+
+<p>
+<h2>
+Not accessible from the keyboard, and with no active element role for screen reader users.
+[Not Accessible]
+</h2>
+
+<span class="button one">
+(1) What am I?
+</span>
+</p>
+
+<p>
+<h2>
+Focusable, but not accessible from the keyboard, and with no active element role for screen reader users.
+[Not Accessible]
+</h2>
+
+<span class="button two" tabindex="0">
+(2) What am I?
+</span>
+</p>
+
+<p>
+<h2>
+Both focusable and accessible from the keyboard, but with no active element role for screen reader users.
+[Not Accessible]
+</h2>
+
+<span class="button three" tabindex="0">
+(3) What am I?
+</span>
+</p>
+
+<p>
+<h2>
+Both focusable and accessible from the keyboard, as well as with an active element role for screen reader users.
+[ACCESSIBLE!]
+</h2>
+
+<span class="button four" tabindex="0" role="button">
+(4) What am I?
+</span>
+</p>
+
+</div>
+</body>
+</html>
