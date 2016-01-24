@@ -4,7 +4,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>The Accessibility Tree: A Training Guide for Advanced Web Development</title>
         <meta name="Author" content="Bryan Garaventa" />
-		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <link rel="stylesheet" type="text/css" href="css/global.css" />
         <script type="text/javascript" src="http://whatsock.com/Acc.DC.API.js"></script>
         <script type="text/javascript" src="js/footnote_generator.js"></script>
