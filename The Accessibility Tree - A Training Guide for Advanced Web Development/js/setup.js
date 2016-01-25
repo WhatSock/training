@@ -1,7 +1,7 @@
 (function(){
 	$A.bind(window, 'load', function(){
 
-		$A.bind('div.topLink > a', 'click', function(ev){
+		$A.bind('p.topLink > a', 'click', function(ev){
 			$A.setFocus($A.query('h1')[0]);
 			ev.preventDefault();
 		});
@@ -33,16 +33,18 @@
 
 		// Generate permalinks
 		$A.query('h2, h3, h4, h5, h6', function(i, o){
-			var d = o.parentNode, a = $A.createEl('a',
-							{
-							href: 'http://whatsock.com/training/#' + d.id,
-							title: 'Permalink: http://whatsock.com/training/#' + d.id,
-							'aria-label': 'Permalink: http://whatsock.com/training/#' + d.id
-							}, null, 'permalink');
+			if (!$A.hasClass(o, 'nopermalink')){
+				var d = o.parentNode, a = $A.createEl('a',
+								{
+								href: 'http://whatsock.com/training/#' + d.id,
+								title: 'Permalink: http://whatsock.com/training/#' + d.id,
+								'aria-label': 'Permalink: http://whatsock.com/training/#' + d.id
+								}, null, 'permalink');
 
-			a.innerHTML = '<span aria-hidden="true">#</span>';
-			d.appendChild(a);
-			$A.css(a, 'left', -(a.offsetWidth));
+				a.innerHTML = '<span aria-hidden="true">#</span>';
+				d.appendChild(a);
+				$A.css(a, 'left', -(a.offsetWidth));
+			}
 		});
 
 		generateTOC();
@@ -77,8 +79,8 @@
 					ev.preventDefault();
 				});
 
-				//if (i < (hs.length - 1))
-					//ph.appendChild($A.createEl('span', null, null, null, document.createTextNode(' | ')));
+			//if (i < (hs.length - 1))
+			//ph.appendChild($A.createEl('span', null, null, null, document.createTextNode(' | ')));
 			}
 		}
 	}, generateTOC = function(){
@@ -139,16 +141,16 @@
 			}
 
 			for (var x = 1; x <= 6; x++)
-				props.map[x] = map[x];
-				a.innerHTML = props.headingText;
-				props.li.appendChild(a);
-	
-				if (level > 1 && !props.pSibling)
-					$A.setAttr(props.ul, 'aria-label', props.map[level - 1].headingText.substring(props.level
-						> 2 ? props.map[level - 1].headingText.indexOf(': ') + 2 : 1));
-				$A.internal.data(a, 'props', props);
-				links.push(a);
-				pLevel = level;
+							props.map[x] = map[x];
+			a.innerHTML = props.headingText;
+			props.li.appendChild(a);
+
+			if (level > 1 && !props.pSibling)
+				$A.setAttr(props.ul, 'aria-label', props.map[level - 1].headingText.substring(props.level
+					> 2 ? props.map[level - 1].headingText.indexOf(': ') + 2 : 1));
+			$A.internal.data(a, 'props', props);
+			links.push(a);
+			pLevel = level;
 		});
 
 		var list = $A.createEl('ul',
