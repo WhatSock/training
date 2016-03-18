@@ -201,9 +201,17 @@ main {
 aside {color: #000; background: #E1E1E1; padding: 2rem 5%;}
 
 p.baseline {font-size: 0.75em; margin-top: 1.5em;}
-p.logo {position: absolute; top: 2rem; left: 50%; width: 100px; margin-left: -50px;}
+p.logo {
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin-left: -50px;
+}
 	
 	p.logo a {background: transparent;}
+	p.logo img {max-height: 100%;}
 
 
 /* --------------- FOOTER --------------- */
@@ -594,7 +602,7 @@ dl.log dd {margin: 0 0 1rem 1rem;}
 	
 	header {width: 20%; text-align: left; padding: 2rem 5%;}
 	h1 {font-size: 4vw; padding: 170px 0 0;}
-	p.logo {width: 150px; left: 15%; margin: 0;}
+	p.logo {width: 150px; height: 150px; left: 15%; margin: 0;}
 	
 	#wrapper {width: 70%;}
 	main {padding: 2rem 3%;}
