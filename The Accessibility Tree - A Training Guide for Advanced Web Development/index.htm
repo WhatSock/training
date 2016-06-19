@@ -237,9 +237,9 @@
 		                                        <li> The arrow keys should traverse logically through each menu item node as expected, or open or close submenus when applicable.</li>
 		                                    </ul>
 		                                </li>
-		                                <li> If a menu item node opens a submenu (another ARIA Menu construct), the focusable element node that includes role="menuitem" must also include<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-haspopup">aria-haspopup="true"</a>.</li>
+		                                <li> If a menu item node opens a submenu (another ARIA Menu construct), the focusable element node that includes role="menuitem" must also include <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-haspopup">aria-haspopup="true"</a>.</li>
 		                                <li> If an external keyboard accessible triggering element opens a menu, it too must include the attribute aria-haspopup="true".</li>
-		                                <li> If programmatic focus is set to the element node that includes role="menu" or role="menubar", the attribute<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-activedescendant">aria-activedescendant</a> must be used to point to the currently selected menu item node that includes either role="menuitem", role="menuitemcheckbox", or role="menuitemradio".</li>
+		                                <li> If programmatic focus is set to the element node that includes role="menu" or role="menubar", the attribute <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-activedescendant">aria-activedescendant</a> must be used to point to the currently selected menu item node that includes either role="menuitem", role="menuitemcheckbox", or role="menuitemradio".</li>
 		                            </ol>
 		                            <p> Live examples:</p>
 		                            <ul>
@@ -467,7 +467,7 @@
 		                                <br/>
 		                                <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#attrs_dragdrop">http://www.w3.org/TR/wai-aria/states_and_properties#attrs_dragdrop</a>
 		                                <br/>
-		                                Specifically:<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-grabbed">aria-grabbed</a> and<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-dropeffect">aria-dropeffect</a>
+		                                Specifically: <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-grabbed">aria-grabbed</a> and <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-dropeffect">aria-dropeffect</a>
 		                            </p>
 		                            <p> The first thing to note, is that the attributes aria-grabbed and aria-dropeffect have no functional effect on the draggability of a component. This must be programmed in advance using JavaScript and CSS to handle mouse and keyboard interaction. The drag and drop ARIA attributes simply convey these relevant behaviors to Assistive Technologies.</p>
 		                            <p> This means that, drag and drop will not be made accessible just by adding these attributes.</p>
@@ -553,7 +553,7 @@
 		                            </ol>
 		                            <p> To ensure the most reliable results, all draggable components that include other active elements, should also include a drag handle to indicate this functionality visually, as well as for sighted and non-sighted keyboard users as shown in the first example.</p>
 		                            <p> Whichever technique is used, a visual indication of this functionality must also be displayed when the draggable container element or drag handle element receives focus, in order to convey to sighted keyboard only users that the component is draggable, as well as the keyboard mechanism for doing this.</p>
-		                            <p> One way to accomplish this is to display a tooltip onFocus to convey this functionality. This tooltip can then be associated with the triggering element using<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby">aria-describedby</a> so that it appears within the Description property of the Accessibility Tree object for Assistive Technologies to utilize.</p>
+		                            <p> One way to accomplish this is to display a tooltip onFocus to convey this functionality. This tooltip can then be associated with the triggering element using <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby">aria-describedby</a> so that it appears within the Description property of the Accessibility Tree object for Assistive Technologies to utilize.</p>
 		                            <p> Example syntax:</p>
 		                            <p>
 		                                <code>
@@ -806,27 +806,27 @@
 		                            <p> Interactive Widget Roles, are all those that specifically map to platform UI equivalents in the Accessibility API.</p>
 		                            <p> These include all of the following primary Widget Roles:</p>
 		                            <ul>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#button"> button</a></li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#checkbox"> checkbox</a></li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#combobox"> combobox</a></li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#grid"> grid</a> (including children with relevant Roles:<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#rowgroup">rowgroup</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#row">row</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#rowheader">rowheader</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#columnheader">columnheader</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#gridcell">gridcell</a>)</li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#link"> link</a></li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#listbox"> listbox</a> (including children with relevant Roles:<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#option">option</a>)</li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menu"> menu</a> (including children with relevant Roles:<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitem">menuitem</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitemcheckbox">menuitemcheckbox</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitemradio">menuitemradio</a>)</li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menubar"> menubar</a> (including children with relevant Roles:<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitem">menuitem</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitemcheckbox">menuitemcheckbox</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitemradio">menuitemradio</a>)</li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#radio"> radio</a> (including ancestor with the relevant Role:<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#radiogroup">radiogroup</a>)</li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#scrollbar"> scrollbar</a></li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#slider"> slider</a></li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#spinbutton"> spinbutton</a></li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#tablist"> tablist</a> (including children with relevant Roles:<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#tab">tab</a>)</li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#textbox"> textbox</a></li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#tree"> tree</a> (including children with relevant Roles:<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#group">group</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#treeitem">treeitem</a>)</li>
-		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#treegrid"> treegrid</a> (including children with relevant Roles:<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#rowgroup">rowgroup</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#row">row</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#rowheader">rowheader</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#columnheader">columnheader</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#gridcell">gridcell</a>)</li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#button">button</a></li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#checkbox">checkbox</a></li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#combobox">combobox</a></li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#grid">grid</a> (including children with relevant Roles: <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#rowgroup">rowgroup</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#row">row</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#rowheader">rowheader</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#columnheader">columnheader</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#gridcell">gridcell</a>)</li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#link">link</a></li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#listbox">listbox</a> (including children with relevant Roles: <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#option">option</a>)</li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menu">menu</a> (including children with relevant Roles: <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitem">menuitem</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitemcheckbox">menuitemcheckbox</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitemradio">menuitemradio</a>)</li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menubar">menubar</a> (including children with relevant Roles: <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitem">menuitem</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitemcheckbox">menuitemcheckbox</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#menuitemradio">menuitemradio</a>)</li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#radio">radio</a> (including ancestor with the relevant Role: <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#radiogroup">radiogroup</a>)</li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#scrollbar">scrollbar</a></li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#slider">slider</a></li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#spinbutton">spinbutton</a></li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#tablist">tablist</a> (including children with relevant Roles: <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#tab">tab</a>)</li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#textbox">textbox</a></li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#tree">tree</a> (including children with relevant Roles: <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#group">group</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#treeitem">treeitem</a>)</li>
+		                                <li><a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#treegrid">treegrid</a> (including children with relevant Roles: <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#rowgroup">rowgroup</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#row">row</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#rowheader">rowheader</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#columnheader">columnheader</a>,<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#gridcell">gridcell</a>)</li>
 		                            </ul>
 		                            <p> All of the above Roles that specify "including children with relevant Roles", must manage programmatic focus by either setting focus to its primary container Role, or to one of its selectable child Roles. If focus is set to the primary container Role,<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-activedescendant">aria-activedescendant</a><i> (also upon the element with the primary container Role)</i> must be dynamically updated to point to the currently selected child Role. For example, if the element including role="listbox" has focus, aria-activedescendant must be used to point to the currently highlighted element that includes role="option". If focus is set to the element that includes role="option" instead, then aria-activedescendant must not be included.</p>
 		                            <p> All of the above Roles that specify "including ancestor with the relevant Role", do not support the use of aria-activedescendant. This is true for all of the standalone Widget Roles as well, requiring that programmatic focus be set to each of these standalone Roles individually. The only exception to this is role="combobox", which supports the use of aria-activedescendant to reference the selected Option within an external Listbox control.</p>
 		                            <p> Whenever possible, Widget Roles should always reflect the intended functionality of the control type that is displayed.</p>
-		                            <p> At the same time, the<a target="_blank" href="http://www.w3.org/TR/wai-aria/roles">Roles Model</a> specification should always be reviewed in advance to ensure that the desired Widget Role matches the intended functionality of the control. This is important, because the Role name by itself may be misleading. For example, a Combobox must not reference a Menu, but instead must reference a Listbox, because the two are not functionally equivalent within Assistive Technologies.</p>
+		                            <p> At the same time, the <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles">Roles Model</a> specification should always be reviewed in advance to ensure that the desired Widget Role matches the intended functionality of the control. This is important, because the Role name by itself may be misleading. For example, a Combobox must not reference a Menu, but instead must reference a Listbox, because the two are not functionally equivalent within Assistive Technologies.</p>
 		                        </div>
 		                        <div id="hd22" class="hd" tabindex="-1">
 		                            <h3><span> 3.3: Compound Components</span></h3>
@@ -930,7 +930,7 @@
 		                                <br/>
 		                                <a target="_blank" href="http://whatsock.com/training/demos/lr/aria-live-polite.html">http://whatsock.com/training/demos/lr/aria-live-polite.html</a>
 		                            </p>
-		                            <p> There are two other attributes that dictate how aria-live behaves when set to either "polite" or "assertive", which are<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-atomic">aria-atomic</a> and<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-relevant">aria-relevant</a>.</p>
+		                            <p> There are two other attributes that dictate how aria-live behaves when set to either "polite" or "assertive", which are <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-atomic">aria-atomic</a> and <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-relevant">aria-relevant</a>.</p>
 		                            <p> When aria-atomic is undefined or set to "false", only the newest text should be announced when added to a Live Region container, regardless whether the container contains additional text or not. This is the default behavior when aria-atomic is not included with the aria-live attribute.</p>
 		                            <p> When aria-atomic is set to "true" however, all of the text should be announced when new text is added to the Live Region container, every time the container is updated.</p>
 		                            <p> Example:</p>
@@ -965,7 +965,7 @@
 		                                <br/>
 		                                <a target="_blank" href="http://whatsock.com/training/demos/lr/announce%20all/aria-atomic-true.html">http://whatsock.com/training/demos/lr/announce%20all/aria-atomic-true.html</a>
 		                            </p>
-		                            <p> The<a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-relevant">aria-relevant</a> attribute controls the type of information that is announced, and may be set to "additions", "removals", "text", "all", or a space delimited list of individual token values. For instance, the default value for aria-relevant is "additions text" when aria-live is set, specifying that only newly added text should be announced.</p>
+		                            <p> The <a target="_blank" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-relevant">aria-relevant</a> attribute controls the type of information that is announced, and may be set to "additions", "removals", "text", "all", or a space delimited list of individual token values. For instance, the default value for aria-relevant is "additions text" when aria-live is set, specifying that only newly added text should be announced.</p>
 		                            <p> When aria-relevant is set to "removals", only removed text nodes should be announced, and not newly added text.</p>
 		                            <p> Example:</p>
 		                            <p>
@@ -1493,41 +1493,41 @@
 		                                    07/24/2014
 		                                </dt>
 		                                <dd>
-		                                    Within section ARIA Categories &gt; Landmarks and Regions &gt; Region Role:<a href="#" onclick="document.getElementById('7-24-2014-1').focus();return false;"> Added Scrollable Divs subsection.</a>
+		                                    Within section ARIA Categories &gt; Landmarks and Regions &gt; Region Role: <a href="#" onclick="document.getElementById('7-24-2014-1').focus();return false;"> Added Scrollable Divs subsection.</a>
 		                                    <br/>
-		                                    Within section Keyboard, Touch, and ATs &gt; Dragon NaturallySpeaking:<a href="#" onclick="document.getElementById('7-24-2014-2').focus();return false;"> Updated ARIA support section to reflect recent press release.</a>
+		                                    Within section Keyboard, Touch, and ATs &gt; Dragon NaturallySpeaking: <a href="#" onclick="document.getElementById('7-24-2014-2').focus();return false;"> Updated ARIA support section to reflect recent press release.</a>
 		                                </dd>
 		                                <dt role="heading" aria-level="3">
 		                                    08/01/2014
 		                                </dt>
 		                                <dd>
-		                                    Within section ARIA, Important Details:<a href="#" onclick="document.getElementById('8-1-2014-1').focus();return false;"> Added ARIA Drag and Drop subsection.</a>
+		                                    Within section ARIA, Important Details: <a href="#" onclick="document.getElementById('8-1-2014-1').focus();return false;"> Added ARIA Drag and Drop subsection.</a>
 		                                </dd>
 		                                <dt role="heading" aria-level="3">
 		                                    08/15/2014
 		                                </dt>
 		                                <dd>
-		                                    Within section Accessibility API &gt; Simulated Web Controls using ARIA:<a href="#" onclick="document.getElementById('8-15-2014-1').focus();return false;"> Added Microsoft ARIA to UIA Role and Property mapping references.</a>
+		                                    Within section Accessibility API &gt; Simulated Web Controls using ARIA: <a href="#" onclick="document.getElementById('8-15-2014-1').focus();return false;"> Added Microsoft ARIA to UIA Role and Property mapping references.</a>
 		                                </dd>
 		                                <dt role="heading" aria-level="3">
 		                                    08/18/2014
 		                                </dt>
 		                                <dd>
-		                                    Within section Accessibility API &gt; User Agent Implementation Guide:<a href="#" onclick="document.getElementById('8-18-2014-1').focus();return false;"> Fixed UAIG Introduction url to point to the correct page. </a>
+		                                    Within section Accessibility API &gt; User Agent Implementation Guide: <a href="#" onclick="document.getElementById('8-18-2014-1').focus();return false;"> Fixed UAIG Introduction url to point to the correct page. </a>
 		                                    <i> (Reported by: Mark Sadecki)</i>
 		                                </dd>
 		                                <dt role="heading" aria-level="3">
 		                                    08/25/2014
 		                                </dt>
 		                                <dd>
-		                                    Within section ARIA Categories:<a href="#" onclick="document.getElementById('8-25-2014-1').focus();return false;"> Added Live Regions subsection.</a>
+		                                    Within section ARIA Categories: <a href="#" onclick="document.getElementById('8-25-2014-1').focus();return false;"> Added Live Regions subsection.</a>
 		                                </dd>
 		                                <dt role="heading" aria-level="3">
 		                                    <span class="footnote" id="f1"></span>
 		                                    09/02/2014
 		                                </dt>
 		                                <dd>
-		                                    Within section Keyboard, Touch, and ATs &gt; Keyboard Accessibility:<a href="#" onclick="document.getElementById('9-2-2014-1').focus();return false;"> Added direct design pattern demos.</a>
+		                                    Within section Keyboard, Touch, and ATs &gt; Keyboard Accessibility: <a href="#" onclick="document.getElementById('9-2-2014-1').focus();return false;"> Added direct design pattern demos.</a>
 		                                </dd>
 		                            </dl>
 		                        </div>
