@@ -1376,6 +1376,8 @@
 		                                    <br/>
 		                                    clip: rect(1px, 1px, 1px, 1px);
 		                                    <br/>
+		                                    		                                    clip-path: inset(50%);
+		                                    <br/>
 		                                    padding: 0;
 		                                    <br/>
 		                                    border: 0;
@@ -1386,14 +1388,14 @@
 		                                    <br/>
 		                                    overflow: hidden;
 		                                    <br/>
-		                                    z-index: -1000;
+		                                    white-space: nowrap;
 		                                    <br/>
 		                                    }
 		                                </code>
 		                            </p>
 		                            <p> This styling configuration is based on the research done by Thierry Koblentz, which is more fully described at
 		                                <br/>
-		                                <a target="_blank" href="https://developer.yahoo.com/blogs/tenydnblog/clip-hidden-content-better-accessibility-53456.html">https://developer.yahoo.com/blogs/tenydnblog/clip-hidden-content-better-accessibility-53456.html</a>
+		                                <a target="_blank" href="https://developer.yahoo.com/blogs/tenydnblog/clip-hidden-content-better-accessibility-53456.html">https://developer.yahoo.com/blogs/tenydnblog/clip-hidden-content-better-accessibility-53456.html</a>, and updated in 2016 to reflect browser support changes for clip-path and white-space properties to increase accessibility.
 		                            </p>
 		                            <p> Regarding event triggering, using VoiceOver by touch to announce content on the page, will automatically trigger the onFocus handler when VoiceOver reads the content, and will automatically trigger the onBlur handler when focus moves away.</p>
 		                            <p> This comes into play when implementing progressively enhanced ARIA Menus for example, which may be designed to disappear when focus moves out of the menu, as would be seen on standard desktop machines for keyboard usage.</p>
