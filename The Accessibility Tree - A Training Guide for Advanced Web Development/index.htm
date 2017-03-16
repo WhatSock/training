@@ -6,8 +6,9 @@
         <meta name="Author" content="Bryan Garaventa" />
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <link rel="stylesheet" type="text/css" href="css/global.css" />
-        <script type="text/javascript" src="http://whatsock.com/Acc.DC.API.js"></script>
-        <script type="text/javascript" src="js/footnote_generator.js"></script>
+        <script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/Acc.DC.API.js"></script>
+        <script type="text/javascript" src="js/footnote_generator.min.js"></script>
         <script type="text/javascript" src="js/setup.js"></script>
     </head>
 	
@@ -681,7 +682,8 @@
 		                            <p> Many developers refer to interactive web technologies as applications, because they are dynamic, and often styled to resemble software user interfaces.</p>
 		                            <p> The logical assumption then, is to add role="application" to every such perceived 'web application'.</p>
 		                            <p> This is an incorrect assumption however, and often causes more harm than good when applied without understanding the Application Role in advance.</p>
-		                            <p> The purpose of role="application" is not simply to define a particular web technology as an application, but rather, to instruct an Assistive Technology to pass keystrokes through to the control that currently has focus. The region where this is applied dictates where this behavior occurs, and defines the area as an Application Landmark for navigability.</p>
+		                            <p> The purpose of role="application" is not simply to define a particular web technology as an application, but rather, to instruct an Assistive Technology to pass keystrokes through to the control that currently has focus. The region where this is applied dictates where this behavior occurs.</p>
+		                            <p>As of ARIA 1.1, role="application" is no longer mapped as a landmark.</p>
 		                            <p> This behavior is valuable when simulated controls require the use of specific keystrokes to function properly, and it becomes necessary to override the default keystroke interception that is done by Assistive Technologies as part of standard interaction.</p>
 		                            <p> For example, JAWS and NVDA screen reader users can press the Up and Down arrows to navigate by line, Control+Up/Down to navigate by paragraph, 'h' to navigate by heading, and so on within the Virtual Buffer without passing any of these keys to the web page.</p>
 		                            <p> In most cases, this type of interaction is exactly what the user expects and wants. </p>
@@ -719,6 +721,7 @@
 		                                <br/>
 		                                <a target="_blank" href="http://www.w3.org/TR/wai-aria/roles#region">http://www.w3.org/TR/wai-aria/roles#region</a>
 		                            </p>
+		                            <p>As of ARIA 1.1, role="region" is now mapped as a landmark.</p>
 		                            <p> The Region Role is helpful for grouping associated content on a page.</p>
 		                            <p> Though all Landmark Roles can optionally be explicitly labeled, the use of role="region" requires an explicit label to identify its purpose for Assistive Technologies.</p>
 		                            <p> This is achieved by including either aria-label or aria-labelledby on the same container element that includes role="region".</p>
