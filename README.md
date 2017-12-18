@@ -27,6 +27,8 @@ http://whatsock.com/training
 Related projects:
 -----
 
+Visual ARIA: https://github.com/accdc/visual-aria
+
 The ARIA Role Conformance Matrices: https://github.com/accdc/aria-matrices
 
 AccDC API
