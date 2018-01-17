@@ -1,13 +1,13 @@
 The Accessibility Tree: A Training Guide for Advanced Web Development
 ========
 
-From the end user perspective, accessibility is always simple. Shades of accessibility aside for whoever is attempting to interact with the desired functionality, either it works as they expect, or it does not. When it doesn't, it always gets bounced back to developers, and officially becomes Somebody Else's Problem.
+The purpose of the ARIA spec is to map simulated web controls to equivalent control types on the platform Accessibility API, and to provide various mechanisms to enhance the accessibility of web technologies. 
 
-As a developer, it's taken me many years to figure out that there are several very important layers to accessibility for web technologies, and how to recognize them during the process of development. It took my involvement with the WAI Protocols and Formats Working Group  to really cement these concepts into place for me, and to put things into perspective. It really should not have to be this difficult though, not for me, or anybody else. This is especially true for developers, upon whose proverbial head all accessibility issues eventually land. 
+Operating System vendors, browser vendors, and Assistive Technology vendors, then follow the ARIA spec to ensure that control mappings are supported properly in each. 
 
-So my goal with writing this, is to provide a single comprehensive explanation of what these layers of accessibility are, and how developers can recognize them during the process of development, so that accessible web technologies will be easier to diagnose and build in the future. 
+It's important to understand that all ARIA Roles and supporting States and Properties map to their equivalent Roles, States and Properties within the Accessibility API on that Operating System, which is why the same ARIA markup when correctly implemented is valid across all devices and platforms.  
 
-This also describes the methodology that I use personally to build and test new web technologies. It's the culmination of many years of study.
+The Accessibility Tree Training Guide provides an in depth overview of all relevant information that is important to be aware of when building ARIA enhanced web technologies.
 
 (Written in collaboration with members of the W3C PFWG, including Richard Schwerdtfeger, T.V Raman, and Mark Sadecki)
 
