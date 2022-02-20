@@ -28,4 +28,4 @@ Related projects:
 -----
 
 * WhatSock Organization: https://github.com/whatsock
-* Visual ARIA: https://github.com/accdc/visual-aria
+* Visual ARIA: https://github.com/whatsock/visual-aria

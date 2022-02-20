@@ -48,10 +48,6 @@
 		});
 
 		generateTOC();
-
-		if (window.navigator.onLine)
-			// Check for updates
-			$A.getScript('http://api.whatsock.com/accdc-updates.js');
 	});
 
 	if (top != window)
